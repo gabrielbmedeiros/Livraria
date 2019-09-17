@@ -26,10 +26,10 @@
                 </th>
                 </thead>
                 <tbody>
-                    
+                    <c:forEach items="${lista}" var="obj">
                         <tr>
-                            <td>1</td>
-                            <td>Terror</td>
+                            <td>${obj.id}</td>
+                            <td>${obj.nome}</td>
                             <td>
                                 <a class="btn btn-info btn-fab btn-icon btn-round" href="">
                                     <i class="tim-icons icon-pencil"></i>
@@ -41,7 +41,7 @@
                                 </a>
                             </td>
                         </tr>
-                           
+                    </c:forEach>  
                 </tbody>
             </table>
         </div>
